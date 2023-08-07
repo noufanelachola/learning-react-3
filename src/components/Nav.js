@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../assets/airbnb 1.png";
+import Logo from "./assets/airbnb1.png";
 
 const Nav = () => {
     return(
