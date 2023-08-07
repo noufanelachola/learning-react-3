@@ -11,7 +11,7 @@ const CardList = () => {
                     imgpath={item.imgpath}
                     review={item.review}
                     reviewCount={item.reviewcount}
-                    country={item.country}
+                    location={item.location}
                     title={item.title}
                     price={item.price}
                 />    
