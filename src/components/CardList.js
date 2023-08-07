@@ -1,18 +1,23 @@
 import React from "react";
 import Card from "./Card";
+import Data from "./Data";
 
 const CardList = () => {
 
-
+    const List = Data.map((item) => {
+        return <Card imgpath={item.imgpath}
+                    review={item.review}
+                    reviewCount={item.reviewcount}
+                    country={item.country}
+                    title={item.title}
+                    price={item.price}
+                />    
+    })
+    
     return(
-        <Card 
-            imgpath="./images/image1.png"
-            review={5.0}
-            reviewCount={6}
-            country="USA"
-            title="Life lessons with Katie Zaferes"
-            price="136"
-        />
+        <div className="cardListCont">
+            {List}
+        </div>
     );
 }
 
