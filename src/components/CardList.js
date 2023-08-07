@@ -5,7 +5,10 @@ import Data from "./Data";
 const CardList = () => {
 
     const List = Data.map((item) => {
-        return <Card imgpath={item.imgpath}
+        return <Card 
+                    openSpots={item.openSpots}
+                    key={item.id}
+                    imgpath={item.imgpath}
                     review={item.review}
                     reviewCount={item.reviewcount}
                     country={item.country}
